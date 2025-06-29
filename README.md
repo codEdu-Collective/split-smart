@@ -26,20 +26,34 @@ Split Smart is a modern full-stack application designed to simplify cost and res
 
 ## 🧱 Tech Stack
 
-| Category         | Tools/Libraries                                                                 |
-|------------------|----------------------------------------------------------------------------------|
-| **Framework**    | [Next.js 15](https://nextjs.org/) (with Turbopack)                              |
-| **Database**     | [Convex](https://convex.dev/)                                                   |
-| **Auth**         | [Clerk](https://clerk.dev/)                                                     |
-| **UI**           | Tailwind CSS, Radix UI, Lucide Icons                                            |
-| **Forms & Validations** | React Hook Form, Zod                                                     |
-| **Charts**       | Recharts                                                                       |
-| **Date Handling**| date-fns, react-day-picker                                                      |
-| **Email**        | Resend                                                                          |
-| **Async Events** | Inngest, Svix                                                                   |
-| **Dev Tools**    | Prettier, ESLint, TypeScript, PostCSS                                           |
+| Category                | Tools/Libraries                                    |
+| ----------------------- | -------------------------------------------------- |
+| **Framework**           | [Next.js 15](https://nextjs.org/) (with Turbopack) |
+| **Database**            | [Convex](https://convex.dev/)                      |
+| **Auth**                | [Clerk](https://clerk.dev/)                        |
+| **UI**                  | Tailwind CSS, Radix UI, Lucide Icons               |
+| **Forms & Validations** | React Hook Form, Zod                               |
+| **Charts**              | Recharts                                           |
+| **Date Handling**       | date-fns, react-day-picker                         |
+| **Email**               | Resend                                             |
+| **Async Events**        | Inngest, Svix                                      |
+| **Dev Tools**           | Prettier, ESLint, TypeScript, PostCSS              |
 
 ---
+
+## 📸 Screenshots / Demo
+
+|              Homepage               |              Login Page               |
+| :---------------------------------: | :-----------------------------------: |
+| ![](./images/homepage.png?raw=true) | ![](./images/login-page.png?raw=true) |
+
+|            User Dashboard            |           Contacts and Groups            |
+| :----------------------------------: | :--------------------------------------: |
+| ![](./images/dashboard.png?raw=true) | ![](./images/contact-group.png?raw=true) |
+
+|              Group Details               |              Settlements               |
+| :--------------------------------------: | :------------------------------------: |
+| ![](./images/group-details.png?raw=true) | ![](./images/settlements.png?raw=true) |
 
 ## 🛠️ Getting Started
 
@@ -48,7 +62,7 @@ Split Smart is a modern full-stack application designed to simplify cost and res
 ```bash
 git clone https://github.com/codEdu-Collective/split-smart.git
 cd split-smart
-````
+```
 
 ### 2. Install dependencies
 
@@ -117,7 +131,9 @@ npm run dev
 └── tsconfig.json
 ```
 
----
+### ERD Diagram
+
+## ![](/images/erd-diagram.png?raw=true)
 
 ## 📝 License
 
@@ -130,9 +146,8 @@ Split Smart Team
 
 Thanks to all open-source libraries, frameworks, and tools that made Split Smart possible — especially:
 
-* [Next.js](https://nextjs.org/)
-* [Clerk](https://clerk.dev/)
-* [Convex](https://convex.dev/)
-* [Resend](https://resend.com/)
-* [Inngest](https://www.inngest.com/)
-
+- [Next.js](https://nextjs.org/)
+- [Clerk](https://clerk.dev/)
+- [Convex](https://convex.dev/)
+- [Resend](https://resend.com/)
+- [Inngest](https://www.inngest.com/)
