@@ -30,7 +30,7 @@
     },
     "dependencies": {
         "@clerk/backend": "^2.4.0",
-        "@clerk/nextjs": "^6.23.1",
+        "@clerk/nextjs": "^6.23.3",
         "@clerk/themes": "^2.2.52",
         "@google/generative-ai": "^0.24.1",
         "@hookform/resolvers": "^5.1.1",
