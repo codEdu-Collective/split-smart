@@ -51,23 +51,23 @@ export function BalanceSummary({ balances }: BalanceSummaryProps) {
                         Owed to you
                     </h3>
                     <div className="space-y-3">
-                        {oweDetails.youAreOwedBy.map(item => (
+                        {oweDetails.youAreOwedBy.map((item, index) => (
                             <Link
-                                href={`/person/${item.userId}`}
-                                key={item.userId}
+                                href={`/person/${item.userId || ''}`}
+                                key={item.userId || `owed-${index}`}
                                 className="flex items-center justify-between hover:bg-muted p-2 rounded-md transition-colors"
                             >
                                 <div className="flex items-center gap-2">
                                     <Avatar className="h-8 w-8">
-                                        <AvatarImage src={item.imageUrl} />
+                                        <AvatarImage src={item.imageUrl || undefined} />
                                         <AvatarFallback>
-                                            {item.name.charAt(0).toUpperCase()}
+                                            {item.name?.charAt(0)?.toUpperCase() || '?'}
                                         </AvatarFallback>
                                     </Avatar>
-                                    <span className="text-sm">{item.name}</span>
+                                    <span className="text-sm">{item.name || 'Unknown'}</span>
                                 </div>
                                 <span className="font-medium text-green-600">
-                                    ${item.amount.toFixed(2)}
+                                    ${(item.amount || 0).toFixed(2)}
                                 </span>
                             </Link>
                         ))}
@@ -82,23 +82,23 @@ export function BalanceSummary({ balances }: BalanceSummaryProps) {
                         You owe
                     </h3>
                     <div className="space-y-3">
-                        {oweDetails.youOwe.map(item => (
+                        {oweDetails.youOwe.map((item, index) => (
                             <Link
-                                href={`/person/${item.base.userId}`}
-                                key={item.base.userId}
+                                href={`/person/${item.base.userId || ''}`}
+                                key={item.base.userId || `owing-${index}`}
                                 className="flex items-center justify-between hover:bg-muted p-2 rounded-md transition-colors"
                             >
                                 <div className="flex items-center gap-2">
                                     <Avatar className="h-8 w-8">
-                                        <AvatarImage src={item.base.imageUrl} />
+                                        <AvatarImage src={item.base.imageUrl || undefined} />
                                         <AvatarFallback>
-                                            {item.base.name.charAt(0).toUpperCase()}
+                                            {item.base.name?.charAt(0)?.toUpperCase() || '?'}
                                         </AvatarFallback>
                                     </Avatar>
-                                    <span className="text-sm">{item.base.name}</span>
+                                    <span className="text-sm">{item.base.name || 'Unknown'}</span>
                                 </div>
                                 <span className="font-medium text-red-600">
-                                    ${item.base.amount.toFixed(2)}
+                                    ${(item.base.amount || 0).toFixed(2)}
                                 </span>
                             </Link>
                         ))}
