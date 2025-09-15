@@ -137,7 +137,7 @@ export function ParticipantSelector({ participants, onParticipantsChange }) {
                                     <CommandGroup heading="Users">
                                         {
                                             // @ts-expect-error: ToDO
-                                            searchResults.map(
+                                            (searchResults || []).map(
                                                 (user: {
                                                     id: string;
                                                     name?: string;
